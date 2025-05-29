@@ -165,6 +165,8 @@ li {
   gap: 1rem;
   list-style: none;
   padding: 0;
+  row-gap: 1px;
+  padding-top: 4px;
 }
 
 .contact-info li {
