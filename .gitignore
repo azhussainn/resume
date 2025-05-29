@@ -1,0 +1,30 @@
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore node modules if you're using a tool like Tailwind or build tools
+node_modules/
+
+# Ignore build output if using a bundler (optional)
+dist/
+build/
+
+# Log files
+*.log
+
+# Environment files
+.env
+.env.*
+.venv
+
+# Optional: ignore package lock files (only if you're not committing them intentionally)
+package-lock.json
+yarn.lock
+
+# VS Code settings
+.vscode/
+
+# Mac system files
+*.swp
+
+__pycache__

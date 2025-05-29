@@ -1,0 +1,23 @@
+<section class="experience-section">
+  <h2 class="section-heading border-b pb-1 mb-4">Experience</h2>
+  {% for job in experience.experience %}
+    <article class="experience-item">
+      <div class="flex-between-wrap">
+        <h3 class="job-title">{{ job.role }}</h3>
+        <span class="job-dates ml-auto shrink-0">
+          {{ job.start_date }} – {{ job.end_date }}
+        </span>
+      </div>
+      <div class="job-meta mt-0.5">
+        {% if job.website %}
+          <a href="{{ job.website }}">{{ job.company }}</a>
+        {% else %}
+          {{ job.company }}
+        {% endif %}, {{ job.location }} ({{ job.type }})
+      </div>
+      <p class="job-summary whitespace-pre-line">
+        {{ job.summary }}
+      </p>
+    </article>
+  {% endfor %}
+</section>

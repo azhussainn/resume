@@ -1,0 +1,29 @@
+<section class="projects-section">
+  <h2 class="section-heading border-b pb-1 mb-4">Projects</h2>
+  {% for project in projects.projects %}
+    <div class="project-item">
+      <div class="flex-between-wrap">
+        <h3 class="project-role">
+          {{ project.role }}
+          <span class="project-company ml-3">({{ project.company }})</span>
+        </h3>
+        <span class="project-duration ml-auto shrink-0">{{ project.duration }}</span>        
+      </div>
+      
+      <ul class="project-highlights list-disc list-inside space-y-1">
+        {% for point in project.highlights %}
+          {% if point is string %}
+            <li>{{ point }}</li>
+          {% elif point.technologies is defined %}
+            <li>
+              <strong>Technologies:</strong>
+              <span class="project-tech">
+                {{ point.technologies | join(', ') }}
+              </span>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+  {% endfor %}
+</section>

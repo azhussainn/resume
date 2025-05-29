@@ -1,0 +1,16 @@
+<section class="education-section">
+  <h2 class="section-heading border-b pb-1 mb-3">Education</h2>
+  <ul class="education-list">
+    {% for edu in education.education %}
+      <li class="education-item">
+        <div class="flex-between-wrap">
+          <p class="degree">{{ edu.degree }}</p>
+          <p class="duration">{{ edu.start_year }} – {{ edu.end_year }}</p>
+        </div>
+        <a href="{{ edu.url }}">
+         <p class="institution">{{ edu.institution }}</p>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</section>

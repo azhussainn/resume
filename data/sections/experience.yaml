@@ -1,0 +1,31 @@
+experience:
+  - company: Polaris Smart Metering
+    role: Full-Stack Developer
+    location: Gurgaon, India
+    type: On-site
+    start_date: 2024-02
+    end_date: Present
+    website: 'https://www.polarisgrids.com/'
+    summary: >
+      Leading smart metering platform development. Built MDMS frontend and co-architected high-throughput backend with PySpark and Kafka.
+      Reduced frontend load time by 30% and boosted team velocity by 25% via Agile practices.
+
+  - company: Ornaz
+    role: Full-Stack Developer
+    location: Gurgaon, India
+    type: On-site
+    start_date: 2021-05
+    end_date: 2024-02
+    website: 'https://www.ornaz.com/'
+    summary: >
+      Delivered full e-commerce platform across web and mobile. Led frontend in React/Next.js/Expo, contributed Django microservices, and integrated RESTful APIs.
+      Collaborated in Agile teams, optimized UI performance, and built ML-driven try-on features.
+
+  - company: KAP Info Solutions
+    role: Web Developer Intern
+    location: Chandigarh, India
+    type: On-site
+    start_date: 2020-09
+    end_date: 2021-03
+    summary: >
+      Internship focused on core web dev with exposure to Python, Pandas, and data workflows.

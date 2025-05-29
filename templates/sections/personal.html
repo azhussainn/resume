@@ -1,0 +1,12 @@
+<section class="personal-section">
+  <h1 class="person-name">{{ personal.name }}</h1>
+  <p class="headline">{{ personal.headline }}</p>
+  <ul class="contact-info">
+    <li><a href="mailto:{{ personal.email }}">{{ personal.email }}</a></li>
+    <li><a href="tel:{{ personal.phone }}">{{ personal.phone }}</a></li>
+    <li><a href="{{ personal.linkedin }}">LinkedIn</a></li>
+    <li><a href="{{ personal.github }}">GitHub</a></li>
+    <li><a href="{{ personal.resume }}">Online Resume</a></li>
+    <li>{{ personal.location }}</li>
+  </ul>
+</section>
