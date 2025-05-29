@@ -27,7 +27,7 @@ def generate_pdf(data, template_dir='templates', template_file='base.html', outp
     print(f"PDF generated successfully: {output_pdf}")
     
     
-def generate_html(data, template_dir='templates', template_file='base.html', output_html='output/resume.html'):
+def generate_html(data, template_dir='templates', template_file='base.html', output_html='index.html'):
     env = Environment(loader=FileSystemLoader(template_dir))
     template = env.get_template(template_file)
     html_out = template.render(**data)
